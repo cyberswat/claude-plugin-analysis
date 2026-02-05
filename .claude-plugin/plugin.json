@@ -1,0 +1,12 @@
+{
+  "name": "analysis",
+  "description": "Structured thinking framework for analysis and decision-making. Includes research, multi-perspective evaluation, adversarial critique, and synthesis commands with persona support.",
+  "version": "1.0.0",
+  "author": {
+    "name": "cyberswat",
+    "url": "https://github.com/cyberswat"
+  },
+  "homepage": "https://github.com/cyberswat/analysis-plugin#readme",
+  "repository": "https://github.com/cyberswat/analysis-plugin",
+  "keywords": ["analysis", "thinking", "decision-making", "research", "critique", "framework"]
+}
