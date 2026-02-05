@@ -30,4 +30,17 @@ Do not be balanced. Do not soften. If this idea has a fatal flaw, say so directl
 
 If it's actually solid, say that too—but only after genuinely trying to break it.
 
+## Cross-Domain Flag (Optional)
+
+If the input includes "also flag concerns from [X]" or "also consider [X] perspective", add a section after the main critique:
+
+### Cross-Domain Concerns ([X] Perspective)
+
+Briefly surface 3-5 concerns that an expert from that domain would immediately notice. These should be:
+- Issues the primary persona might overlook due to different priorities
+- Domain-specific risks or requirements that aren't obvious to outsiders
+- Quick flags, not a full analysis
+
+Keep this section brief. The goal is to surface blind spots, not to do a complete second critique. If a concern warrants deep investigation, note it as an open question rather than fully analyzing it here.
+
 Subject: $ARGUMENTS

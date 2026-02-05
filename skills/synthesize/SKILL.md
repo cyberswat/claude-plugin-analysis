@@ -34,3 +34,9 @@ What remains unresolved? What would you want to know before committing fully?
 ---
 
 Keep it tight. This is raw material for decisions, not a polished document.
+
+---
+
+After the synthesis, add:
+
+**Ready to commit? Run `/analysis:decide` to lock in your decision.**
