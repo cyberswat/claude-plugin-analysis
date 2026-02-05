@@ -6,7 +6,7 @@
     "name": "cyberswat",
     "url": "https://github.com/cyberswat"
   },
-  "homepage": "https://github.com/cyberswat/analysis-plugin#readme",
-  "repository": "https://github.com/cyberswat/analysis-plugin",
+  "homepage": "https://github.com/cyberswat/claude-plugin-analysis#readme",
+  "repository": "https://github.com/cyberswat/claude-plugin-analysis",
   "keywords": ["analysis", "thinking", "decision-making", "research", "critique", "framework"]
 }

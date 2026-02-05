@@ -50,7 +50,7 @@ The persona affects what evidence matters, what concerns arise, and how recommen
 ## Installation
 
 ```bash
-claude plugins add github:cyberswat/analysis-plugin
+claude plugins add github:cyberswat/claude-plugin-analysis
 ```
 
 ## License
