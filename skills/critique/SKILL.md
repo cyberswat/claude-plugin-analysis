@@ -1,6 +1,6 @@
 ---
 name: critique
-description: Adversarial stress-test of an idea. Find fatal flaws, hidden assumptions, dependencies, and failure modes. Use after evaluate to break the idea before committing.
+description: Adversarial stress test of an idea. Find fatal flaws, hidden assumptions, dependencies, and failure modes. Use after evaluate to break the idea before committing.
 allowed-tools: [Read, WebFetch, WebSearch, Grep, Glob]
 ---
 
@@ -8,9 +8,11 @@ allowed-tools: [Read, WebFetch, WebSearch, Grep, Glob]
 
 Your job is to break this. Be adversarial. Find the fatal flaws, not minor issues.
 
+**Start by reviewing the evaluate output.** Focus your critique on the least scrutinized assumptions, especially those flagged in the Contrarian perspective and any assumptions that multiple perspectives share without questioning.
+
 ## Persona
 
-If a persona or role is specified (e.g., "as a security engineer"), adopt that expertise lens:
+If a persona or role is specified, such as "as a security engineer", adopt that expertise lens:
 - Surface assumptions that persona would challenge
 - Identify dependencies that persona knows are fragile
 - Focus on failure modes that persona has seen before
@@ -20,27 +22,51 @@ The critique should feel like it comes from a domain expert who has seen things 
 
 ## Focus
 
-- **Assumptions** – What is being taken for granted that might not be true?
-- **Dependencies** – What has to go right for this to work? How likely is that?
-- **Blind spots** – What perspectives or stakeholders are being ignored?
-- **Failure modes** – How does this fail? What's the worst realistic outcome?
-- **Hidden costs** – What's not being accounted for in time, money, attention, or opportunity cost?
+For each issue found, assign a severity level:
+
+- **Fatal**: This alone could cause the entire approach to fail. Must be addressed before proceeding.
+- **Serious**: Significant risk that could derail success if not mitigated. Needs a plan.
+- **Notable**: Worth knowing about but manageable. Should be monitored.
+
+Organize findings by these categories:
+
+### Fatal Flaws
+Issues that could cause complete failure. If none exist, explicitly state that none were found after genuine stress testing.
+
+### Serious Risks
+Significant concerns requiring mitigation plans.
+
+### Notable Issues
+Worth tracking but not blocking.
+
+Within each severity level, address:
+- **Assumptions** What is being taken for granted that might not be true?
+- **Dependencies** What has to go right for this to work? How likely is that?
+- **Blind spots** What perspectives or stakeholders are being ignored?
+- **Failure modes** How does this fail? What is the worst realistic outcome?
+- **Hidden costs** What is not being accounted for in time, money, attention, or opportunity cost?
 
 Do not be balanced. Do not soften. If this idea has a fatal flaw, say so directly.
 
-If it's actually solid, say that too—but only after genuinely trying to break it.
+If it is actually solid, say that too, but only after genuinely trying to break it.
 
-## Cross-Domain Flag (Optional)
+## Pre Mortem
 
-If the input includes "also flag concerns from [X]" or "also consider [X] perspective", add a section after the main critique:
+Assume this decision was made 12 months ago and it failed. Write a brief narrative: What happened? What went wrong? Which risks materialized? What was the sequence of events that led to failure? Be specific and realistic.
 
-### Cross-Domain Concerns ([X] Perspective)
+## Cross Domain Flag
 
-Briefly surface 3-5 concerns that an expert from that domain would immediately notice. These should be:
+If the input includes "also flag concerns from [X]" or "also consider [X] perspective", add a prominent section after the main critique:
+
+### Cross Domain Concerns: [X] Perspective
+
+Surface three to five concerns that an expert from that domain would immediately notice. These should be:
 - Issues the primary persona might overlook due to different priorities
-- Domain-specific risks or requirements that aren't obvious to outsiders
+- Domain specific risks or requirements that are not obvious to outsiders
 - Quick flags, not a full analysis
 
-Keep this section brief. The goal is to surface blind spots, not to do a complete second critique. If a concern warrants deep investigation, note it as an open question rather than fully analyzing it here.
+If adjacent domains were identified during the analyze step, this section carries extra weight. Treat these as potential blind spots that deserve serious attention, not just a footnote.
+
+If a concern warrants deep investigation, note it as an open question rather than fully analyzing it here.
 
 Subject: $ARGUMENTS
