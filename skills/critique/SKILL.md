@@ -54,9 +54,11 @@ If it is actually solid, say that too, but only after genuinely trying to break 
 
 Assume this decision was made 12 months ago and it failed. Write a brief narrative: What happened? What went wrong? Which risks materialized? What was the sequence of events that led to failure? Be specific and realistic.
 
-## Cross Domain Flag
+## Cross Domain Concerns
 
-If the input includes "also flag concerns from [X]" or "also consider [X] perspective", add a prominent section after the main critique:
+Even if no cross domain flag was specified in the input, identify the single most relevant adjacent domain for this topic and surface two to three concerns from that perspective. Most decisions have blind spots that only become visible from outside the primary domain.
+
+If the input includes "also flag concerns from [X]" or "also consider [X] perspective", use that domain instead and expand to a more detailed section:
 
 ### Cross Domain Concerns: [X] Perspective
 

@@ -21,12 +21,11 @@ Use `WebSearch` to discover relevant sources and `WebFetch` to retrieve their co
 
 ### Source Resilience
 
-When a WebFetch returns a 403 or 404:
+When a WebFetch returns a 403 or 404, you **must** take action before moving on:
 1. Log the failed source in the "Sources Attempted But Inaccessible" section.
-2. Attempt an alternative source covering the same topic.
+2. **Immediately run a new WebSearch** to find a different source covering the same topic. Do not skip this step. The goal is to replace the lost information, not just document the gap.
 3. In the Evidence Quality Assessment, note if high quality sources were disproportionately inaccessible and how this may skew findings.
-4. Use WebSearch to find cached, mirrored, or summarized versions of inaccessible content when the source appears critical.
-5. If more than half of attempted sources fail, flag the research as potentially incomplete and recommend the user manually review the inaccessible sources listed.
+4. If more than half of attempted sources fail, flag the research as potentially incomplete and recommend the user manually review the inaccessible sources listed.
 
 ## Required Output Format
 

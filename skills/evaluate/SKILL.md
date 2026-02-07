@@ -32,7 +32,7 @@ The strongest case in favor. Assume competence and good intent. What is the best
 **Key assumptions**: List one to two assumptions this perspective depends on.
 
 ### Skeptic
-Legitimate concerns and weaknesses. What could go wrong? What is being underestimated? Where are the risks?
+Legitimate concerns and weaknesses. What could go wrong? What is being underestimated? Where are the risks? **Before writing this section, verify it makes a different core claim than the Informed section.** If both perspectives reach a similar conclusion, the Skeptic must push further into territory the Informed perspective would not go.
 
 **Key assumptions**: List one to two assumptions this perspective depends on.
 

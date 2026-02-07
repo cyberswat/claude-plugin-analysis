@@ -33,12 +33,11 @@ Be thorough but concise. Flag where evidence is thin or conflicting.
 
 ## Source Resilience
 
-When a WebFetch returns a 403 or 404:
-1. Log the failed source in a "Sources Attempted But Inaccessible" section so the user can see what was lost
-2. Attempt an alternative source covering the same topic rather than silently moving on
-3. In the Evidence Quality Assessment, explicitly note if high quality sources such as academic journals, industry reports, or gated publications were disproportionately inaccessible and how this may skew findings
-4. Use WebSearch to find cached, mirrored, or summarized versions of inaccessible content when the source appears critical
-5. If more than half of attempted sources fail, flag the research as potentially incomplete and recommend the user manually review the inaccessible sources listed
+When a WebFetch returns a 403 or 404, you **must** take action before moving on:
+1. Log the failed source in the "Sources Attempted But Inaccessible" section so the user can see what was lost
+2. **Immediately run a new WebSearch** to find a different source covering the same topic. Do not skip this step. The goal is to replace the lost information, not just document the gap.
+3. In the Evidence Quality Assessment, explicitly note if high quality sources were disproportionately inaccessible and how this may skew findings
+4. If more than half of attempted sources fail, flag the research as potentially incomplete and recommend the user manually review the inaccessible sources listed
 
 ## Required Output Format
 
